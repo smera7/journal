@@ -1,0 +1,291 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Cormorant+SC:wght@300&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Cormorant+SC:wght@300&family=Manrope&display=swap');
+img {
+    width: 50%;
+    height: 50%;
+    padding-top: 20px;
+    align-self: center;
+    justify-self: center;
+    margin: 0 auto;
+    display: block;
+}
+
+grid {
+    color: black;
+    display: grid;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.Journal {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 10em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    justify-items: flex-end;
+    justify-self: flex-end;
+    margin-top: auto;
+}
+
+.filters {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    align-items: flex-start;
+    margin: 15px;
+    font-family: CircularStd-Book,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    align-items: center;
+    font-family: CircularStd-Book,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-rows: repeat(5, 1fr) */
+    /* grid-area:
+    border: 1px solid black; */
+    justify-content: center;
+    grid-area: "intro intro intro intro intro intro chronicle chronicle chronicle chronicle" 
+                "intro intro intro intro intro intro chronicle chronicle chronicle chronicle" 
+                "intro intro intro intro intro intro chronicle chronicle chronicle chronicle" 
+                "intro intro intro intro intro intro publications publications publications publications" 
+                "intro intro intro intro intro intro publications publications publications publications" 
+                "thoughts thoughts thoughts design design design publications publications publications publications" 
+                "thoughts thoughts thoughts design design design planning planning ideas ideas" 
+                "thoughts thoughts thoughts design design design planning planning ideas ideas";
+}
+
+article {
+    display: flex; /* Add this line */
+    flex-direction: column; /* Optional: If you want the child elements to stack vertically */
+    align-items: center; /* Optional: Center the items horizontally */
+    font-family: 'Manrope', sans-serif;
+}
+
+.intro {
+    display:flex;
+    border: 1px solid black; 
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chronicle {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    border: 1px solid black;
+    align-items: stretch;
+    grid-row-start: 0;
+    grid-row-end: 2;
+}
+
+.thoughts {
+    display:flex;
+    border: 1px solid black; 
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 11;
+    justify-content: center;
+    align-items: center;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+}
+
+.intro {
+    display: flex;
+    border: 1px solid black; 
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 2em 3.5em;
+    width: auto;
+    height: auto;
+}
+
+.chronicle {
+    display: flex;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    border: 1px solid black;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 2em 3.5em;
+    width: auto;
+    height: auto;
+}
+
+.thoughts {
+    display: flex;
+    border: 1px solid black; 
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 11;
+    padding: 2em 3.5em;
+    width: auto;
+    height: auto;
+}
+
+.publications {
+    display: flex;
+    border: 1px solid black; 
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 11;
+    justify-content: center;
+}
+
+.planning {
+    display: flex;
+    border: 1px solid black; 
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 11;
+    grid-row-end: 12;
+    justify-content: center;
+}
+
+.ideas {
+    display: flex;
+    border: 1px solid black; 
+}
+
+.design {
+    display: flex;
+    border: 1px solid black; 
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 11;
+    padding: 2em 3.5em;
+    width: auto;
+    height: auto;
+}
+
+.publications {
+    display:flex;
+    border: 1px solid black; 
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 11;
+    padding: 2em 3.5em;
+    width: auto;
+    height: auto;
+}
+
+.planning {
+    display:flex;
+    border: 1px solid black; 
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 11;
+    grid-row-end: 12;
+    padding: 2em 3.5em;
+    width: auto;
+    height: auto;
+}
+
+.credits {
+    display:flex;
+    border: 1px solid black; 
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 11;
+    grid-row-end: 12;
+    padding: 2em 3.5em;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.ideas {
+    display:flex;
+    border: 1px solid black; 
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 11;
+    grid-row-end: 12;
+    padding: 2em 3.5em;
+    width: auto;
+    height: auto;
+
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+}
+
+.projects {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    border: 1px solid black;
+    grid-row: 2 / 4;
+    font-family: cormorant sc, serif;
+    font-size: 2em;
+    text-align: center;
+    justify-self: center;
+    align-items: center;
+    display: flex;
+}
+
+.article-metadata {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: auto; /* Adjust margin as needed */
+    align-self: flex-start; /* Align to the top */
+}
+
+.category {
+    align-self: flex-start;
+}
+
+.date {
+    align-self: flex-end;
+}
+
+.article-content {
+    text-align: left; /* Left justify the content */
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+h4 {
+    margin: 0; /* Remove default margin for h4 */
+}
